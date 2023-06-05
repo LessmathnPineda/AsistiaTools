@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.ManageUserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre del usuario: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textUserForm_userName"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:hint="Ingresa el nombre"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Correo del usuario: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textUserForm_userMail"
+                android:background="@drawable/edittext_background"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:hint="Ingresa el correo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Estado: *" />
+
+            <Spinner
+                android:id="@+id/sltUserForm_userStatus"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Perfil: *" />
+
+            <Spinner
+                android:id="@+id/sltUserForm_userProfile"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Tipo de asistente:" />
+
+            <Spinner
+                android:id="@+id/sltUserForm_userType"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/menuButtomIncludeForm"
+        layout="@layout/menu_buttom_form"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

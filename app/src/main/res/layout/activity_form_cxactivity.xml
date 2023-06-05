@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.FormCXActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCheckin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="24dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="FORMULARIO CX" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleCheckIn_creationDate"
+                android:layout_height="wrap_content"
+                android:text="Número de remisión / colectivo CX" />
+
+            <TextView
+                android:id="@+id/textFormCX_ColectiveCX"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Estado del procedimiento: *" />
+
+            <Spinner
+                android:id="@+id/sltFormCX_processStatus"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Cx: *" />
+
+            <Spinner
+                android:id="@+id/sltFormCX_CxType"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_date"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:textSize="16dp"
+                android:hint="Seleccione la fecha"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de inicio de jornada: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_initialHour"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:textSize="16dp"
+                android:hint="Seleccione la hora"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de inicio CX: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_initialHourCX"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:textSize="16dp"
+                android:hint="Seleccione la hora"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/lblFormCX_cancelMotive"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Motivo de cancelación: *" />
+
+            <Spinner
+                android:id="@+id/sltFormCX_cancelMotive"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:id="@+id/lblFormCx_otherCancelMotive"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Otro motivo de cancelación:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_otherCancelMotive"
+                android:background="@drawable/edittext_background"
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/lblFormCx_finishHourCX"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de finalización CX" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_finishHourCX"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:textSize="16dp"
+                android:hint="Seleccione la hora"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Comentarios generales del procedimiento:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_generalComments"
+                android:background="@drawable/edittext_background"
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Tipo de abordaje: *" />
+
+            <Spinner
+                android:id="@+id/sltFormCX_abourtType"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre del paciente: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFormCx_patientNameConfirm"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:lines="1"
+                android:textSize="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Recibiste Prequirúrgico: *" />
+
+            <RadioGroup
+                android:id="@+id/textFormCx_prequirurgico"
+                android:layout_width="match_parent"
+                android:orientation='horizontal'
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <RadioButton
+                    android:id="@+id/textFormCx_prequirurgicoYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si"/>
+
+                <RadioButton
+                    android:id="@+id/textFormCx_prequirurgicoNot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/lblFormCX_motiveCXConsume"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Motivo Cx 'Sin consumo': *" />
+
+            <Spinner
+                android:id="@+id/sltFormCX_motiveCXConsume"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Estado de la remision: *" />
+
+            <Spinner
+                android:id="@+id/sltFormCX_remissionStatus"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:id="@+id/lblFormCx_perfectProcess"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="La cirugía ocurrió de forma perfecta: *" />
+
+            <RadioGroup
+                android:id="@+id/textFormCx_perfectProcess"
+                android:layout_width="match_parent"
+                android:orientation='horizontal'
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <RadioButton
+                    android:id="@+id/textFormCx_perfectProcessYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si"/>
+
+                <RadioButton
+                    android:id="@+id/textFormCx_perfectProcessNot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/menuButtomIncludeForm"
+        layout="@layout/menu_buttom_form"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

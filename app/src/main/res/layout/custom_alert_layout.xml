@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/high_risk_icon"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleAlertDanger"
+            android:text="Acceso no autorizado"
+            android:textSize="24sp"
+            android:textColor="@color/orange_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/messageAlertDanger"
+            android:textSize="16sp"
+            android:textColor="@color/gray_color"
+            android:layout_marginTop="10dp"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/dialogDismiss_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/orange_color"
+            android:textColor="@color/white"
+            android:text="Aceptar"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

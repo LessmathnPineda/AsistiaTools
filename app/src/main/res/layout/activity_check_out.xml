@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.CheckOutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleCheckOut_creationDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha de creación" />
+
+            <TextView
+                android:id="@+id/textCheckOut_creationDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleCheckOut_client"
+                android:layout_height="wrap_content"
+                android:text="Cliente" />
+
+            <TextView
+                android:id="@+id/textCheckOut_client"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_dark_letter"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Por favor seleccione la fecha de salida y la evidencia por medio de una imagen." />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha de salida: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCheckOut_inputDate"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:hint="mm/dd/aaaa"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de salida: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCheckOut_inputTime"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:hint="hh:mm"
+                android:layout_below="@+id/in_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Imagen de soporte" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnImageCheckOut"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_baseline_camera_alt_24_gray"
+                    android:text=""
+                    android:clickable="true"
+                    android:padding="8dp"
+                    tools:srcCompat="@drawable/ic_baseline_camera_alt_24_gray" />
+
+                <ImageView
+                    android:id="@+id/imageViewCheckOut"
+                    android:visibility="gone"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/imageTextDeleteCheckOut"
+                    android:visibility="gone"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:padding="2dp"
+                    android:text="Eliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Documento de soporte" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnDocumentCheckOut"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_baseline_attach_file_24_gray"
+                    android:text=""
+                    android:clickable="true"
+                    android:padding="8dp"
+                    tools:srcCompat="@drawable/ic_baseline_attach_file_24_gray" />
+
+                <TextView
+                    android:id="@+id/documentTextViewCheckOut"
+                    android:layout_marginTop="6dp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/documentTextDeleteCheckOut"
+                    android:visibility="gone"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="Eliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/menuButtomIncludeForm"
+        layout="@layout/menu_buttom_form"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

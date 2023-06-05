@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.DetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_colective"
+                android:layout_height="wrap_content"
+                android:text="Colectivo" />
+
+            <TextView
+                android:id="@+id/textDetail_colective"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_regional"
+                android:layout_height="wrap_content"
+                android:text="Regional" />
+
+            <TextView
+                android:id="@+id/textDetail_regional"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_observations"
+                android:layout_height="wrap_content"
+                android:text="Observaciones" />
+
+            <TextView
+                android:id="@+id/textDetail_observations"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_city"
+                android:layout_height="wrap_content"
+                android:text="Ciudad" />
+
+            <TextView
+                android:id="@+id/textDetail_city"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_creationDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha" />
+
+            <TextView
+                android:id="@+id/textDetail_creationDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_client"
+                android:layout_height="wrap_content"
+                android:text="Cliente" />
+
+            <TextView
+                android:id="@+id/textDetail_client"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_systemJJ"
+                android:layout_height="wrap_content"
+                android:text="Sistema Principal JJ" />
+
+            <TextView
+                android:id="@+id/textDetail_systemJJ"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_systemOM"
+                android:layout_height="wrap_content"
+                android:text="Sistema Principal Om" />
+
+            <TextView
+                android:id="@+id/textDetail_systemOM"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_system"
+                android:layout_height="wrap_content"
+                android:text="Sistema" />
+
+            <TextView
+                android:id="@+id/textDetail_system"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_companyAT"
+                android:layout_height="wrap_content"
+                android:text="Empresa At" />
+
+            <TextView
+                android:id="@+id/textDetail_companyAT"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_specialist"
+                android:layout_height="wrap_content"
+                android:text="Especialista" />
+
+            <TextView
+                android:id="@+id/textDetail_specialist"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_patientName"
+                android:layout_height="wrap_content"
+                android:text="Nombre Del Paciente" />
+
+            <TextView
+                android:id="@+id/textDetail_patientName"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_pagador"
+                android:layout_height="wrap_content"
+                android:text="Pagador" />
+
+            <TextView
+                android:id="@+id/textDetail_pagador"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_lineNeg"
+                android:layout_height="wrap_content"
+                android:text="Linea Neg" />
+
+            <TextView
+                android:id="@+id/textDetail_lineNeg"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_house"
+                android:layout_height="wrap_content"
+                android:text="Casa" />
+
+            <TextView
+                android:id="@+id/textDetail_house"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_patientCC"
+                android:layout_height="wrap_content"
+                android:text="C.C Paciente" />
+
+            <TextView
+                android:id="@+id/textDetail_patientCC"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_appoitmentNumber"
+                android:layout_height="wrap_content"
+                android:text="Numero De Cita" />
+
+            <TextView
+                android:id="@+id/textDetail_appoitmentNumber"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_requestNumber"
+                android:layout_height="wrap_content"
+                android:text="Numero De Solicitud" />
+
+            <TextView
+                android:id="@+id/textDetail_requestNumber"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_monthOne"
+                android:layout_height="wrap_content"
+                android:text="Mes1" />
+
+            <TextView
+                android:id="@+id/textDetail_monthOne"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_urgenceHours"
+                android:layout_height="wrap_content"
+                android:text="Hora De Aviso De Urgencia" />
+
+            <TextView
+                android:id="@+id/textDetail_urgenceHours"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_coberture"
+                android:layout_height="wrap_content"
+                android:text="Cobertura" />
+
+            <TextView
+                android:id="@+id/textDetail_coberture"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_confirmEmailHour"
+                android:layout_height="wrap_content"
+                android:text="Hora Correo De Confirmacion" />
+
+            <TextView
+                android:id="@+id/textDetail_confirmEmailHour"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_planning"
+                android:layout_height="wrap_content"
+                android:text="Planeadora" />
+
+            <TextView
+                android:id="@+id/textDetail_planning"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_externSupport"
+                android:layout_height="wrap_content"
+                android:text="Soporte Externo" />
+
+            <TextView
+                android:id="@+id/textDetail_externSupport"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_responsibleEmail"
+                android:layout_height="wrap_content"
+                android:text="At Programado" />
+
+            <TextView
+                android:id="@+id/textDetail_responsibleEmail"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_responsibleName"
+                android:layout_height="wrap_content"
+                android:text="At Programado Nombre" />
+
+            <TextView
+                android:id="@+id/textDetail_responsibleName"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_assignDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha De Asignación" />
+
+            <TextView
+                android:id="@+id/textDetail_assignDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_assignStatus"
+                android:layout_height="wrap_content"
+                android:text="Estado De Asignación" />
+
+            <TextView
+                android:id="@+id/textDetail_assignStatus"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_assignAuthorize"
+                android:layout_height="wrap_content"
+                android:text="Autoriza Asignación" />
+
+            <TextView
+                android:id="@+id/textDetail_assignAuthorize"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_realArriveDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha De Llegada Real" />
+
+            <TextView
+                android:id="@+id/textDetail_realArriveDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_arriveDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha De Llegada" />
+
+            <TextView
+                android:id="@+id/textDetail_arriveDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_arriveLocation"
+                android:layout_height="wrap_content"
+                android:text="Ubicación De Llegada" />
+
+            <TextView
+                android:id="@+id/textDetail_arriveLocation"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_realExitDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha De Salida Real" />
+
+            <TextView
+                android:id="@+id/textDetail_realExitDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_exitDate"
+                android:layout_height="wrap_content"
+                android:text="Fecha De Salida" />
+
+            <TextView
+                android:id="@+id/textDetail_exitDate"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_exitLocation"
+                android:layout_height="wrap_content"
+                android:text="Ubicación De Salida" />
+
+            <TextView
+                android:id="@+id/textDetail_exitLocation"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_supportImage"
+                android:layout_height="wrap_content"
+                android:text="Imagen Soporte" />
+
+            <TextView
+                android:id="@+id/textDetail_supportImage"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_supportDoc"
+                android:layout_height="wrap_content"
+                android:text="Documento De Soporte" />
+
+            <TextView
+                android:id="@+id/textDetail_supportDoc"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_technicalName"
+                android:layout_height="wrap_content"
+                android:text="Asistente Tecnico" />
+
+            <TextView
+                android:id="@+id/textDetail_technicalName"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_remissionNumber"
+                android:layout_height="wrap_content"
+                android:text="Numero De Remisión/ Colectivo  Cx" />
+
+            <TextView
+                android:id="@+id/textDetail_remissionNumber"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_processStatus"
+                android:layout_height="wrap_content"
+                android:text="Estado Del Procedimiento" />
+
+            <TextView
+                android:id="@+id/textDetail_processStatus"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_typeCX"
+                android:layout_height="wrap_content"
+                android:text="Tipo De Cx" />
+
+            <TextView
+                android:id="@+id/textDetail_typeCX"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_date"
+                android:layout_height="wrap_content"
+                android:text="Fecha" />
+
+            <TextView
+                android:id="@+id/textDetail_date"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_initialHour"
+                android:layout_height="wrap_content"
+                android:text="Hora De Inicio De Jornada" />
+
+            <TextView
+                android:id="@+id/textDetail_initialHour"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_initialHourCX"
+                android:layout_height="wrap_content"
+                android:text="Hora De Inicio Cx?" />
+
+            <TextView
+                android:id="@+id/textDetail_initialHourCX"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_cancelMotive"
+                android:layout_height="wrap_content"
+                android:text="Motivo De Cancelación" />
+
+            <TextView
+                android:id="@+id/textDetail_cancelMotive"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_otherCancelMotive"
+                android:layout_height="wrap_content"
+                android:text="Otro Motivo De Cancelacion" />
+
+            <TextView
+                android:id="@+id/textDetail_otherCancelMotive"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_finishHourCX"
+                android:layout_height="wrap_content"
+                android:text="Hora De Finalización Cx?" />
+
+            <TextView
+                android:id="@+id/textDetail_finishHourCX"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_generalComments"
+                android:layout_height="wrap_content"
+                android:text="Comentarios Generales Del Procedimiento" />
+
+            <TextView
+                android:id="@+id/textDetail_generalComments"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_abourtType"
+                android:layout_height="wrap_content"
+                android:text="Tipo De Abordaje  (Abordaje Bilateral Cuando Se Intervine Las Dos Literalidades Izquierdo Y Derecho)" />
+
+            <TextView
+                android:id="@+id/textDetail_abourtType"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_patientNameConfirm"
+                android:layout_height="wrap_content"
+                android:text="Nombre Del Paciente" />
+
+            <TextView
+                android:id="@+id/textDetail_patientNameConfirm"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_prequirurgico"
+                android:layout_height="wrap_content"
+                android:text="Recibiste Prequirúrgico" />
+
+            <TextView
+                android:id="@+id/textDetail_prequirurgico"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_motiveCXConsume"
+                android:layout_height="wrap_content"
+                android:text="Motivo Cx 'Sin Consumo'" />
+
+            <TextView
+                android:id="@+id/textDetail_motiveCXConsume"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_remissionStatus"
+                android:layout_height="wrap_content"
+                android:text="Estado De La Remision" />
+
+            <TextView
+                android:id="@+id/textDetail_remissionStatus"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:id="@+id/textTitleDetails_perfectProcess"
+                android:layout_height="wrap_content"
+                android:text="La Cirugía Ocurrió De Forma Perfecta" />
+
+            <TextView
+                android:id="@+id/textDetail_perfectProcess"
+                android:layout_width="match_parent"
+                android:textColor="@color/gray_letter"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/menuButtomIncludeViewDetails"
+        layout="@layout/menu_buttom_details"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

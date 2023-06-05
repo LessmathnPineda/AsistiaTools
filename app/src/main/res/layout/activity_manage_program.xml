@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.ManageProgramActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="50dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Colectivo: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_colective"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Regional: *" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_regional"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:dropDownWidth="fill_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Observaciones:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_observations"
+                android:background="@drawable/edittext_background"
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Ciudad: *" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_city"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_creationDate"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:hint="mm/dd/aaaa"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_creationTime"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:hint="hh:mm"
+                android:layout_below="@+id/in_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Cliente: *" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_client"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Sistema principal JJ:" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_systemJJ"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Sistema principal OM:" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_systemOM"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Sistema:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_system"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Empresa AT: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_companyAT"
+                android:background="@drawable/edittext_background"
+                android:inputType="textMultiLine"
+                android:maxLines="1"
+                android:text="Asistía"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Especialista: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_specialist"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre del paciente: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_patientName"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Pagador: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_pagador"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Línea Neg: *" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_lineNeg"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Casa: *" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_house"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="C.C. Paciente:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_patientCC"
+                android:background="@drawable/edittext_background"
+                android:inputType="number"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Número de cita: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_appoitmentNumber"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Número de solicitud: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_requestNumber"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Mes1: *" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_monthOne"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de aviso de urgencia:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_urgenceHours"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:hint="hh:mm"
+                android:layout_below="@+id/in_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Cobertura:" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_coberture"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Hora correo de confirmación:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_confirmEmailHour"
+                android:background="@drawable/edittext_background"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:focusable="false"
+                android:hint="hh:mm"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Planeadora:" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_planning"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="AT Programado:" />
+
+            <Spinner
+                android:id="@+id/sltProgramForm_responsibleEmail"
+                android:background="@drawable/spinner_background"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="54dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_top_label"
+                android:layout_width="match_parent"
+                android:id="@+id/labelProgramForm_responsibleName"
+                android:textColor="@color/black_color"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="AT Programado nombre: *" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textProgramForm_responsibleName"
+                android:background="@drawable/edittext_background"
+                android:inputType="number"
+                android:maxLines="1"
+                android:text=""
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="false"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/menuButtomIncludeForm"
+        layout="@layout/menu_buttom_form"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

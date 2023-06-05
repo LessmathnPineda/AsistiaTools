@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/button_border.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/edittext_background.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/google_icon.xml" value="0.3635" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/gradient_spinner.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_baseline_camera_alt_24_gray.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_baseline_cancel_24_red.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_baseline_delete_24_gray_dark.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_baseline_edit_24_blank.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_baseline_edit_calendar_24_gray_dark.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_frame_24.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/icon_checkin_24.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/icon_checkout_24.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/icon_denny_assign.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/icon_denny_assign_24.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/icon_form_cx_24.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/rounded_corner_alert.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/spinner_background.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/drawable/splashscreen.xml" value="0.3635" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_check_in.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_check_out.xml" value="0.36608863198458574" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_details.xml" value="0.13157894736842105" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_form_cxactivity.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_home.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_manage_program.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_manage_user.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_normal.xml" value="0.21458710066305003" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/activity_not_access.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/card_form_list_item.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/custom_alert_layout.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/layout_loading_screen.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/menu_app.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/menu_buttom_basic.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/menu_buttom_details.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/menu_buttom_form.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/menu_buttom_full.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/recycler_admin_program_item.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/recycler_default_item.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/recycler_location_item.xml" value="0.1859375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/recycler_my_program_item.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/layout/recycler_user_item.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/menu/close_app_menu.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/menu/main_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/AsistaTools/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1935" />
+        <entry key="..\:/Users/User/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.18541666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

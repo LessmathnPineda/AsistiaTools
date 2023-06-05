@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AsistíaTools" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme_Dialog_FULL" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/rounded_corner_alert</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/teal_700</item>
+        <item name="colorPrimary">@color/purple_700</item>
+    </style>
+
+    <style name="ProgressBarCustom" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/bg_color</item>
+    </style>
+
+    <style name="AlertDialogTheme">
+        <item name="android:background">@color/bg_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/purple_700</item>
+        <item name="rippleColor">@color/purple_500</item>
+        <item name="android:textColor">@color/bg_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginLeft">8sp</item>
+    </style>
+
+    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/bg_color</item>
+        <item name="rippleColor">@color/teal_200</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AsistíaTools">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+</resources>

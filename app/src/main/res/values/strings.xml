@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Asistía Tools</string>
+    <string name="title_alert">Mensaje informativo</string>
+    <string name="title_confirm">Mensaje de confirmación</string>
+    <string name="alert_ok">Aceptar</string>
+    <string name="alert_cancel">Cancelar</string>
+    <string name="preference_file_key">co.com.asistia.tools.while_in_use_location.PREFERENCE_FILE_KEY</string>
+    <string name="client_id_app" translatable="false">177955348027-id15ka94f59jn3mgum1g0ol036a0b5gb.apps.googleusercontent.com</string>
+</resources>

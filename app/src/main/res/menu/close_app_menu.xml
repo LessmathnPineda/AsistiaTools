@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/closeAppMenu"
+        android:icon="@drawable/ic_sharp_exit_to_app_24"
+        android:textColor="@color/gray_color"
+        android:iconTint="@color/black_color"
+        android:title="Cerrar sesión"
+        app:showAsAction="withText" />
+</menu>

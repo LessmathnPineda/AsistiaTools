@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "177955348027",
+    "project_id": "asistia-tools",
+    "storage_bucket": "asistia-tools.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177955348027:android:d09292ece51fa13520061e",
+        "android_client_info": {
+          "package_name": "co.com.asistia.tools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177955348027-6jqmmjs7j0gorlr4pemhnscur83jav96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.com.asistia.tools",
+            "certificate_hash": "51079cfda5d384acb78059c1f8ced444c677c38c"
+          }
+        },
+        {
+          "client_id": "177955348027-85fjter2if0rkrcipjsh3tchgab5v9md.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.com.asistia.tools",
+            "certificate_hash": "f5c416ad6f892f098ce8a4f159196456ff578b11"
+          }
+        },
+        {
+          "client_id": "177955348027-id15ka94f59jn3mgum1g0ol036a0b5gb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUz6siKSfFLoC7-I_AMTvc-sA6i9_g-AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177955348027-id15ka94f59jn3mgum1g0ol036a0b5gb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "177955348027-h6o1bel2gfvup2n897lpan95rs3vr0md.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.com.app.asistia.tools"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

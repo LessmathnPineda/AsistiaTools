@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "co.com.asistia.tools"
+        minSdk 19
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Importar la lista de materiales para la plataforma Firebase
+    implementation platform('com.google.firebase:firebase-bom:30.0.0')
+
+    // Declarar la dependencia de la biblioteca de autenticación de Firebase
+    // Al usar la BOM, no especifica versiones en Dependencias de la Biblioteca Firebase
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    //implementation 'com.google.firebase:firebase-messaging:23.0.6'
+
+    // También declare la dependencia de la biblioteca de servicios de Google Play y especifique su versión
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+    // Libreria para el manejo de imagenes
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Work Manager dependency
+    implementation 'androidx.work:work-runtime:2.7.1'
+
+    // SOporte de recicler
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    // Agregamos la dependencia de material design
+    //implementation "com.google.android.material:material:1.7.0-alpha02"
+}
