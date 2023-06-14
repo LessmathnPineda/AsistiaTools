@@ -103,7 +103,7 @@ class MyProgramAdapter(programList: MutableList<MyProgramObject>, myActivity: Ac
     }
 
     /**
-     * Clase para dar forma al recycler
+     * Clase para dar forma al recycler para vista de usuario
      */
     class DefaultListHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -128,14 +128,14 @@ class MyProgramAdapter(programList: MutableList<MyProgramObject>, myActivity: Ac
         val recyclerBtnFormCX = view.findViewById(R.id.btnFormCX) as ImageButton;
 
         /**
-         * Creamos el metodo para renderizar nustro objeto y datos
+         * Creamos el metodo para renderizar nustro objeto y datos de la vista de usuario
          */
         fun bind(programData: MyProgramObject, context: Context){
 
             // cargamos cada uno de los valores
             recyclerTextValueOne.text = programData.client;
-            recyclerTextValueTwo.text = programData.assignDate;
-            recyclerTextValueThree.text = programData.observations;
+            recyclerTextValueTwo.text = programData.creationDate;
+           recyclerTextValueThree.text = programData.observations;
 
             // Por defceto ocultamos todos los botones
             recyclerBtnDennyAssign.visibility = View.GONE;

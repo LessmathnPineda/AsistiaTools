@@ -100,7 +100,7 @@ class AdminProgramAdapter(programList: MutableList<MyProgramObject>, myActivity:
     }
 
     /**
-     * Clase para dar forma al recycler
+     * Clase para dar forma al recycler vista de administrador
      */
     class DefaultListHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -122,13 +122,13 @@ class AdminProgramAdapter(programList: MutableList<MyProgramObject>, myActivity:
         val recyclerBtnEdit = view.findViewById(R.id.btnEditProgramItem) as ImageButton;
 
         /**
-         * Creamos el metodo para renderizar nustro objeto y datos
+         * Creamos el metodo para renderizar nustro objeto y datos vista administrador
          */
         fun bind(programData: MyProgramObject, context: Context){
 
             // cargamos cada uno de los valores
             recyclerTextValueOne.text = programData.client;
-            recyclerTextValueTwo.text = programData.assignDate;
+            recyclerTextValueTwo.text = programData.creationDate;
             recyclerTextValueThree.text = programData.responsibleEmail;
 
             // validamos que estaoo es para asignar el color respectivp
