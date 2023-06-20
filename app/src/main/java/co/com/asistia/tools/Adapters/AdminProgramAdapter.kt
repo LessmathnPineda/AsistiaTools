@@ -129,7 +129,7 @@ class AdminProgramAdapter(programList: MutableList<MyProgramObject>, myActivity:
             // cargamos cada uno de los valores
             recyclerTextValueOne.text = programData.client;
             recyclerTextValueTwo.text = programData.creationDate;
-            recyclerTextValueThree.text = programData.responsibleEmail;
+            recyclerTextValueThree.text = programData.responsibleName;
 
             // validamos que estaoo es para asignar el color respectivp
             if(programData.assignStatus == "Asignado y notificado"){
